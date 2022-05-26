@@ -1,0 +1,25 @@
+<h1>Skills List</h1>
+
+<table>
+    <tr>
+        <th>Skill</th>
+        <th>Proficiency</th>
+        <th>Delete</th>
+    </tr>
+    <% data.forEach(function(data, index){ %>
+
+        <tr>
+            <td><%= data.skill %></td>
+            <td><%= data.proficiency %></td>
+            <td>
+                <a href="/skills/skill/edit?id=<%= index %>">Edit</a>
+            </td>
+            <td>
+                <a href="/skills/skill/delete?id=<%= index %>">Delete</a>
+            </td>
+        </tr>
+
+    <% }) %> <!--Backend JS in HTML-->
+</table>
+<br>
+<a href="/skills/newSkill">Add a new skill</a>

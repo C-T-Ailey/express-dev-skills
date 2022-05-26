@@ -2,7 +2,7 @@
   "name": "express-dev-skills",
   "version": "1.0.0",
   "description": "Express dev skills homework",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,9 @@
     "url": "https://git.generalassemb.ly/cailey90/express-dev-skills.git"
   },
   "author": "Chris Ailey",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
 }

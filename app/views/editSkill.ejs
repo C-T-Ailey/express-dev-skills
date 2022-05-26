@@ -1,0 +1,19 @@
+<h1>Edit Existing Skill</h1>
+
+<form method="POST" action="/skills/skill/update">
+    <label>First Name: </label> <br>
+    <input type="text" name="skill" id="skill" value="<%= data.skill %>">
+
+    <br>
+
+    <label>Last Name: </label> <br>
+    <input type="text" name="proficiency" id="proficiency" value="<%= data.proficiency %>">
+
+    <br>
+
+    <input type="hidden" name="id" value="<%= id %>">
+
+    <br>
+
+    <input type="submit" name="Submit">
+</form>
